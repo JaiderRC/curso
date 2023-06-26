@@ -1,1 +1,17 @@
-ssd
+import java.io.IOException;
+
+public class tarea {
+    public static void main(String[] args) {
+       Runtime hola =Runtime.getRuntime();
+       Process tii;
+        try {
+            tii = hola.exec("notepad");
+            tii.waitFor();
+        } catch (Exception e) {
+            System.err.println("metodo inválido "+ e.getMessage());
+        }
+
+
+    }
+
+    }
